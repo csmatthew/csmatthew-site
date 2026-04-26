@@ -39,17 +39,79 @@
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
             crossorigin="anonymous"
         />
+        <style>
+            .carousel-img {
+                object-fit: cover;
+            }
+        </style>
     </head>
     <body class="d-flex flex-column min-vh-100">
-            <header class="bg-dark text-white text-center py-4">
-                <div class="container">
-                    <h1 class="mb-0">Christopher Matthew</h1>
-                    <p class="lead mb-0">Architectural Designer</p>
+        <header class="bg-dark text-white text-center py-4">
+            <div class="container">
+                <h1 class="mb-0">Christopher Matthew</h1>
+                <p class="lead mb-0">Architectural Designer</p>
+            </div>
+        </header>
+        <main class="bg-light flex-fill">
+            <div
+                id="carouselExampleSlidesOnly"
+                class="carousel slide"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            src="assets\images\placeholder\Friends_Towers,_Munich,_June_2019.jpg"
+                            class="d-block w-100 h-100 carousel-img"
+                            alt="Placeholder Image 1"
+                            width="960"
+                            height="640"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="assets\images\placeholder\Architectural_drawing_of_the_Public_Offices,_Toowoomba,_1887.jpg"
+                            class="d-block w-100 h-100 carousel-img"
+                            alt="Placeholder Image 2"
+                            width="1400"
+                            height="1121"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="assets\images\placeholder\Architectural_Masterplan_Model_of_Lieb_Tang_Rodfai_Villas.jpg"
+                            class="d-block w-100 h-100 carousel-img"
+                            alt="Placeholder Image 3"
+                            width="1280"
+                            height="731"
+                        />
+                    </div>
                 </div>
-            </header>
-        <main class="flex-fill">
-            <p>This is the Website</p>
-            <p>More content to come...</p>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleSlidesOnly"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleSlidesOnly"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </main>
 
         <footer class="bg-dark text-white text-center py-4 mt-auto">
@@ -64,7 +126,11 @@
                     <a href="#" class="text-white" title="LinkedIn">
                         <i class="fab fa-linkedin fa-lg"></i>
                     </a>
-                    <a href="mailto:you@example.com" class="text-white" title="Email Me">
+                    <a
+                        href="mailto:you@example.com"
+                        class="text-white"
+                        title="Email Me"
+                    >
                         <i class="fas fa-envelope fa-lg"></i>
                     </a>
                 </div>
